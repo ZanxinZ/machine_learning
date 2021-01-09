@@ -24,7 +24,7 @@ model.compile(loss='mean_squared_error',
 
 ### model.compile 需要三个参数 （损失函数，优化器，评估标准）
 
-- 损失函数 losses
+####  损失函数 losses
 
   均方误差
 
@@ -58,7 +58,7 @@ model.compile(loss='mean_squared_error',
 
   cosine_proximity(y_true, y_pred)
 
-- 优化器 optimizer
+####  优化器 optimizer
 
   sgd 随机梯度下降
 
@@ -76,21 +76,21 @@ model.compile(loss='mean_squared_error',
 
   keras.optimizers.Nadam(lr=0.002, beta_1=0.9, beta_2=0.999, epsilon=**None**, schedule_decay=0.004)
 
-- 评估标准Metric
+#### 评估标准Metric
 
   评价函数和损失函数相似，只不过评价函数的结果不会用于训练过程中。
 
   binary_accuracy(y_true, y_pred)
 
   categorical_accuracy(y_true, y_pred)
-  
+
   sparse_categorical_accuracy(y_true, y_pred)
-  
+
   top_k_categorical_accuracy(y_true, y_pred, k=5)
-  
+
   sparse_top_k_categorical_accuracy(y_true, y_pred, k=5)
 
-### 激活函数Activation
+## 激活函数Activation
 
 使得神经元更好地拟合非线性函数
 
